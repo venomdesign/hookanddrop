@@ -1,0 +1,12 @@
+---
+const socials = [
+  { name: 'TikTok', href: 'https://tiktok.com/@hookanddrop'},
+  { name: 'Instagram', href: 'https://instagram.com/hookanddrop'},
+  { name: 'X', href: 'https://x.com/hookanddrop'},
+  { name: 'Reddit', href: 'https://reddit.com/u/hookanddrop'},
+  { name: 'YouTube', href: 'https://www.youtube.com/@HookAndDrop'}
+];
+---
+<div class="socials">
+  {socials.map(s => <a class="pill" href={s.href} rel="noopener noreferrer" target="_blank">{s.name}</a>)}
+</div>

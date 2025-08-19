@@ -1,0 +1,50 @@
+:root{
+  --bg:#0e0e10;
+  --fg:#ffffff;
+  --muted:#9ca3af;
+  --accent:#ff7a00; /* orange */
+  --card:#16161a;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:radial-gradient(1200px 600px at 10% -10%, #18181b, transparent),
+             radial-gradient(900px 500px at 110% 10%, #1f1f23, transparent),
+             var(--bg);
+  color:var(--fg);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+  line-height:1.5;
+}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--fg)}
+.logo{
+  border-radius:50%;
+  display:grid;place-items:center;
+  box-shadow:0 0 0 2px #fff inset, 0 10px 40px rgba(0,0,0,.5);
+  font-weight:800;letter-spacing:.5px;
+}
+.pill{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.06);color:var(--muted);font-size:14px}
+.hero{
+  display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;margin-top:48px
+}
+@media (max-width:900px){ .hero{grid-template-columns:1fr} }
+h1{font-size:clamp(36px,5vw,64px);line-height:1.05;margin:0 0 12px}
+.accent{color:var(--accent)}
+p.lead{font-size:clamp(16px,2.1vw,20px);color:var(--muted);margin:0 0 20px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  appearance:none;border:none;cursor:pointer;
+  padding:14px 18px;border-radius:12px;font-weight:700;
+}
+.btn.primary{background:var(--accent);color:#111}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.2)}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:900px){ .grid{grid-template-columns:1fr} }
+footer{margin:48px 0 16px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+a{color:inherit}
+.socials{display:flex;gap:12px;flex-wrap:wrap}
+.tag{background:rgba(255,122,0,.15);border:1px dashed rgba(255,122,0,.5);color:#ffd1b0;padding:6px 10px;border-radius:999px;font-size:13px}
+video{width:100%;border-radius:16px;border:1px solid rgba(255,255,255,.1);}
