@@ -1,16 +1,17 @@
 {
-  "name": "hookanddrop-splash",
-  "version": "1.0.0",
-  "private": true,
+  "name": "hookanddrop",
   "type": "module",
+  "version": "0.0.1",
+  "homepage": "https://venomdesign.github.io/hookanddrop",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+  "predeploy": "astro build"
   },
   "dependencies": {
-    "astro": "^4.13.0"
+    "astro": "^5.12.4"
   },
   "devDependencies": {
     "prettier": "^3.3.3",
